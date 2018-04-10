@@ -1,10 +1,27 @@
 import React from "react";
 import pic from "./wave.jpg";
 
+import { css } from 'glamor'
+
+let flex = css({
+  display: 'flex',
+  justifyContent: 'center',
+  width:'100%', 
+})
+
+
 
 export default () => (
   <div>
-    <div className="flex"><img className="profileimg" src={pic} /></div>
+                        <div {...flex}>
+                          <img className="profileimg" src={pic} 
+                                    css={{
+                                        borderRadius: '50%',
+                                        height:250,
+                                        width: 250,
+                                        margin: '0 auto',
+                                      }} />
+                        </div>
     <h1>Hi! My name is Juston!</h1>
     <p>
       I am a full-stack web developer currently located in Boca Raton, FL. 
