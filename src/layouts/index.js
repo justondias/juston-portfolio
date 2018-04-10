@@ -6,9 +6,30 @@ import linkicon from "./link.svg";
 
 
 import Link from "gatsby-link";
+import { css } from 'glamor'
+
+let social_media_icon_container = css({
+  display:'inline-block',
+  border:0,
+  backgroundColor: 'lightblue',
+  width:50,
+  height:50,
+  position: 'relative',
+  transition: 'all 200ms ease-in',
+  ':hover': {
+    transition: 'all 200ms ease-in',
+    transform: 'scale(1.5)',
+  } 
+})
+
+let social_media_container = css({
+  display: 'flex',
+  justifyContent: 'space-around',
+  maxWidth: 400,
+  margin: '0 auto',
+})
 
 
-import './index.scss';
 
 const ListLink = props =>
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -42,16 +63,16 @@ export default ({ children, data  }) =>
            <h3>Contact Me!</h3>
       
               <p>juston706@gmail.com</p>              
-              <div className="social_media_container">
-                  <a className="social_media_icon_container"
+              <div {...social_media_container}>
+                  <a {...social_media_icon_container}
                    href="https://www.linkedin.com/in/juston-dias-bb1857138/" target="_blank">
                     <img className="social_media_icon" src={linkicon} />
                   </a>
-                  <a className="social_media_icon_container"  
+                  <a {...social_media_icon_container}
                    href="https://github.com/justondias" target="_blank">
                     <img className="social_media_icon" src={giticon} />
                   </a>
-                  <a className="social_media_icon_container" style={{textDecoration: 'none'}}
+                  <a {...social_media_icon_container}
                      href="https://www.instagram.com/justondias/" target="_blank">
                     <img className="social_media_icon" src={instaicon} />
                   </a>
