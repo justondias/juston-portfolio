@@ -16,6 +16,7 @@
     "gatsby-source-filesystem": "^1.5.29",
     "gatsby-transformer-remark": "^1.7.39",
     "micro": "latest",
-    "serve": "^6.5.4"
+    "serve": "^6.5.4",
+    "typography-theme-fairy-gates": "^0.15.11"
   }
 }
