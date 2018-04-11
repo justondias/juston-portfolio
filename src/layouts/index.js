@@ -45,7 +45,7 @@ const ListLink = props =>
 
 export default ({ children}) => 
  <div >
-     <Headroom style={{backgroundColor:'lightblue',}}>
+     <Headroom style={{backgroundColor:'lightblue',}} >
      
           <header {...padding_global}>
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`,color:'black',fontWeight:'bold',textShadow:'none' }}>
@@ -60,7 +60,7 @@ export default ({ children}) =>
        
   </Headroom>
   
-      <div style={{minHeight:'75vh'}} {...padding_global}>  
+      <div style={{minHeight:'2000px'}} {...padding_global}>  
           {children()}
           
       </div>
