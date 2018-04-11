@@ -66,7 +66,7 @@ export default ({ children}) =>
       <div>
         <footer style={{ backgroundColor:"lightblue",  textAlign:'center', height:'300px', padding:'1rem 0'}}> 
             
-           <h3>Contact Me!</h3>
+           <h3>Contact Me</h3>
       
               <p>juston706@gmail.com</p>              
               <div {...social_media_container}>
