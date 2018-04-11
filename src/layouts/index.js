@@ -45,7 +45,7 @@ const ListLink = props =>
   </li>
 
 export default ({ children}) => 
- <div>
+ <div >
       <div style={{backgroundColor:'lightblue',}}>
           <header {...padding_global}>
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`,color:'black',fontWeight:'bold',textShadow:'none' }}>
@@ -58,7 +58,7 @@ export default ({ children}) =>
             </ul>
           </header>
       </div>    
-      <div style={{minHeight:'85vh'}} {...padding_global}>  
+      <div style={{minHeight:'75vh'}} {...padding_global}>  
           {children()}
           
       </div>
@@ -72,15 +72,15 @@ export default ({ children}) =>
               <div {...social_media_container}>
                   <a {...social_media_icon_container}
                    href="https://www.linkedin.com/in/juston-dias-bb1857138/" target="_blank">
-                    <img className="social_media_icon" src={linkicon} />
+                    <img className="social_media_icon" src={linkicon} alt="icon" />
                   </a>
                   <a {...social_media_icon_container}
                    href="https://github.com/justondias" target="_blank">
-                    <img className="social_media_icon" src={giticon} />
+                    <img className="social_media_icon" src={giticon} alt="icon"/>
                   </a>
                   <a {...social_media_icon_container}
                      href="https://www.instagram.com/justondias/" target="_blank">
-                    <img className="social_media_icon" src={instaicon} />
+                    <img className="social_media_icon" src={instaicon} alt="icon" />
                   </a>
               </div>
            
