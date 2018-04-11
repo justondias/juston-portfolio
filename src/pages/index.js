@@ -43,7 +43,7 @@ export const pageQuery = graphql`
 query HeaderImageQuery {
   profileImage: imageSharp(id: { regex: "/profilePic/" }) {
     resolutions(width: 250, height: 250) {
-      ...GatsbyImageSharpResolutions
+      ...GatsbyImageSharpResolutions_tracedSVG
     } 
   }
 }
