@@ -21,6 +21,7 @@
     "gatsby-transformer-sharp": "^1.6.22",
     "glamorous": "^4.12.1",
     "micro": "latest",
+    "react-headroom": "^2.2.2",
     "serve": "^6.5.4",
     "typography-theme-fairy-gates": "^0.15.11"
   }

@@ -8,6 +8,7 @@ let project_conteiner = css({
     border:'solid black',
     marginBottom: 5,
     position: 'relative',
+    borderRadius: '1%',
     transition: 'all 200ms ease-in',
     ':hover': {
       transition: 'all 200ms ease-in',

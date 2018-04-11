@@ -3,8 +3,7 @@ import giticon from "./git.svg";
 import instaicon from "./insta.svg";
 import linkicon from "./link.svg";
 
-
-
+import Headroom from "react-headroom";
 import Link from "gatsby-link";
 import { css } from 'glamor'
 
@@ -46,7 +45,8 @@ const ListLink = props =>
 
 export default ({ children}) => 
  <div >
-      <div style={{backgroundColor:'lightblue',}}>
+     <Headroom style={{backgroundColor:'lightblue',}}>
+     
           <header {...padding_global}>
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`,color:'black',fontWeight:'bold',textShadow:'none' }}>
                 JDK
@@ -57,7 +57,9 @@ export default ({ children}) =>
      
             </ul>
           </header>
-      </div>    
+       
+  </Headroom>
+  
       <div style={{minHeight:'75vh'}} {...padding_global}>  
           {children()}
           
