@@ -3,8 +3,8 @@ import Link from "gatsby-link";
 import { css } from 'glamor'
 
 
-let project_conteiner = css({
-    padding: 10,
+let project_container = css({
+    background:'#f1f1f1',
     border:'solid black',
     marginBottom: 5,
     position: 'relative',
@@ -16,6 +16,9 @@ let project_conteiner = css({
     } 
 })
 
+let desc_container = css({
+  padding: 10,
+})
 
 export default ({ data }) => {
   console.log(data);
@@ -27,16 +30,19 @@ export default ({ data }) => {
 
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id} {...project_conteiner}>
-          <Link
-            to={node.fields.slug}
-            
-          >
-          <h3>
-            {node.frontmatter.title}
-          </h3>
-          <p>{node.excerpt}</p>
-          </Link>
+        <div key={node.id} {...project_container}>
+          <img src="http://via.placeholder.com/160x90" css={{width:'100%',height:'auto'}} />
+          <div {...desc_container}>
+              <Link
+                to={node.fields.slug}
+                
+              >
+              <h3 css={{textShadow: 'none', margin:0}}>
+                {node.frontmatter.title}
+              </h3>
+              <p css={{textShadow: 'none', color:'#444444'}}>{node.excerpt}</p>
+              </Link>
+          </div>
         </div>
       ))}
     </div>
