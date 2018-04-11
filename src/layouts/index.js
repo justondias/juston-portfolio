@@ -29,21 +29,27 @@ let social_media_container = css({
   margin: '0 auto',
 })
 
+let padding_global= css({
+  padding: `1.25rem 1rem`, 
+  maxWidth: 650, 
+  margin:'0 auto'
+})
+
 
 
 const ListLink = props =>
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>
+    <Link style={{textShadow:'none'}} to={props.to}>
       {props.children}
     </Link>
   </li>
 
 export default ({ children}) => 
  <div>
-      <div style={{padding: `1.25rem 1rem`, maxWidth: 650, minHeight:'85vh', margin: `0 auto`}}>
-          <header style={{ margin:'0 auto'}}>
-            <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-                Juston Dias
+      <div style={{backgroundColor:'lightblue',}}>
+          <header {...padding_global}>
+            <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`,color:'black',fontWeight:'bold',textShadow:'none' }}>
+                JDK
             </Link>
             <ul style={{ disply:"inline-block",float:"right" }}>
               <ListLink to="/">Home</ListLink>
@@ -51,8 +57,8 @@ export default ({ children}) =>
      
             </ul>
           </header>
-          
-          
+      </div>    
+      <div style={{minHeight:'85vh'}} {...padding_global}>  
           {children()}
           
       </div>
