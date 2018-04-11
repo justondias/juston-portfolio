@@ -60,7 +60,7 @@ export default ({ children}) =>
        
   </Headroom>
   
-      <div style={{minHeight:'2000px'}} {...padding_global}>  
+      <div style={{minHeight:'75vh'}} {...padding_global}>  
           {children()}
           
       </div>
