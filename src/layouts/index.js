@@ -39,6 +39,11 @@ let headerIconStyle= css({
   width: 50, 
   height:50,
   margin:0,
+  transition: 'all 200ms ease-in',
+  ':hover': {
+    transition: 'all 200ms ease-in',
+    transform: 'scale(1.2)',
+  } 
 })
 
 
