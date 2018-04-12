@@ -2,6 +2,7 @@ import React from "react";
 import giticon from "./git.svg";
 import instaicon from "./insta.svg";
 import linkicon from "./link.svg";
+import headerIcon from "./jdk.svg";
 
 import Headroom from "react-headroom";
 import Link from "gatsby-link";
@@ -34,6 +35,11 @@ let padding_global= css({
   margin:'0 auto'
 })
 
+let headerIconStyle= css({
+  width: 50, 
+  height:50,
+  margin:0,
+})
 
 
 const ListLink = props =>
@@ -48,10 +54,12 @@ export default ({ children}) =>
      <Headroom style={{backgroundColor:'lightblue',}} >
      
           <header {...padding_global}>
-            <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`,color:'black',fontWeight:'bold',textShadow:'none' }}>
-                JDK
-            </Link>
-            <ul style={{ disply:"inline-block",float:"right" }}>
+            
+              <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`,color:'black',fontWeight:'bold',textShadow:'none' }}>
+                  <img src={headerIcon} {...headerIconStyle}/>
+              </Link>
+            
+            <ul style={{ disply:"inline-block",float:"right", margin:0 }}>
               <ListLink to="/">Home</ListLink>
               <ListLink to="/projects/">Projects</ListLink>
      
@@ -85,7 +93,7 @@ export default ({ children}) =>
                     <img className="social_media_icon" src={instaicon} alt="icon" />
                   </a>
               </div>
-           
+        
         </footer>
     </div>
  </div>
