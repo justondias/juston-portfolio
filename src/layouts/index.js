@@ -59,7 +59,7 @@ export default ({ children}) =>
                   <img src={headerIcon} {...headerIconStyle}/>
               </Link>
             
-            <ul style={{ disply:"inline-block",float:"right", margin:0 }}>
+            <ul style={{ display:"inline-block",float:"right", margin:0 }}>
               <ListLink to="/">Home</ListLink>
               <ListLink to="/projects/">Projects</ListLink>
      
