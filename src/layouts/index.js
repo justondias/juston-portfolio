@@ -46,10 +46,19 @@ let headerIconStyle= css({
   } 
 })
 
+let headerLink= css({
+  borderRadius:"10%",
+  padding: 13,
+  border: 'solid black 1px',
+  background:'#00092e',
+  ':hover': {
+    background:'white',  
+  } 
+})
 
 const ListLink = props =>
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link style={{textShadow:'none'}} to={props.to}>
+    <Link style={{textShadow:'none', color:'#add8e6'}} to={props.to} {...headerLink}>
       {props.children}
     </Link>
   </li>
@@ -60,13 +69,13 @@ export default ({ children}) =>
      
           <header {...padding_global}>
             
-              <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`,color:'black',fontWeight:'bold',textShadow:'none' }}>
+            <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`,color:'black',fontWeight:'bold',textShadow:'none' }}>
                   <img src={headerIcon} {...headerIconStyle}/>
-              </Link>
+            </Link>
             
-            <ul style={{ display:"inline-block",float:"right", margin:0 }}>
-              <ListLink to="/">Home</ListLink>
-              <ListLink to="/projects/">Projects</ListLink>
+            <ul style={{ display:"inline-block",float:"right" }}>
+              <ListLink to="/" >Home</ListLink>
+              <ListLink to="/projects/" >Projects</ListLink>
      
             </ul>
           </header>
