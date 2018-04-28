@@ -3,7 +3,7 @@ title: "Client Website Optimization"
 date: "2017-08-10"
 ---
 
-My clients main concerns were loading loading times and broken componets on thier website, [stripclublist.com](https://www.google.com) (warning NSFW content).
+
 
 > We're living the future so
 > the present is our past.
