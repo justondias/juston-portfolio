@@ -36,8 +36,9 @@ let padding_global= css({
 })
 
 let headerIconStyle= css({
-  width: 50, 
-  height:50,
+  paddingTop:5,
+  width: 45, 
+  height:45,
   margin:0,
   transition: 'all 200ms ease-in',
   ':hover': {
@@ -48,17 +49,19 @@ let headerIconStyle= css({
 
 let headerLink= css({
   borderRadius:"10%",
-  padding: 13,
-  border: 'solid black 1px',
-  background:'#00092e',
+  padding: 5,
+  border: 'solid black 1.4px',
+  background:'lightblue',
+
+
   ':hover': {
-    background:'white',  
+    background:'gray'  
   } 
 })
 
 const ListLink = props =>
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link style={{textShadow:'none', color:'#add8e6'}} to={props.to} {...headerLink}>
+  <li style={{display:"inline-block",float:"right",listStyle:'none',margin:0, height:60,paddingTop:13,paddingLeft:10 }}>
+    <Link exact activeStyle={{ color:'black',background:'darkgray'}} style={{textShadow:'none', color:'black'}} to={props.to} {...headerLink}>
       {props.children}
     </Link>
   </li>
@@ -67,17 +70,17 @@ export default ({ children}) =>
  <div >
      <Headroom style={{backgroundColor:'lightblue',}} >
      
-          <header {...padding_global}>
+          <header style={{  padding: `0.25rem 1rem`, maxWidth: 650, margin:'0 auto'}}>
             
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`,color:'black',fontWeight:'bold',textShadow:'none' }}>
-                  <img src={headerIcon} {...headerIconStyle}/>
+            <img src={headerIcon} {...headerIconStyle}/>
             </Link>
             
-            <ul style={{ display:"inline-block",float:"right", marginTop:13 }}>
-              <ListLink to="/" >Home</ListLink>
               <ListLink to="/projects/" >Projects</ListLink>
+              <ListLink to="/" >Home</ListLink>
+              
      
-            </ul>
+           
           </header>
        
   </Headroom>

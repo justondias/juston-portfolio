@@ -6,7 +6,7 @@ import { css } from 'glamor'
 let project_container = css({
     background:'#f1f1f1',
     border:'solid black',
-    marginBottom: 5,
+    marginBottom: 10,
     position: 'relative',
     borderRadius: '1%',
     transition: 'all 200ms ease-in',
