@@ -48,9 +48,9 @@ let headerIconStyle= css({
 })
 
 let headerLink= css({
-  borderRadius:"10%",
-  padding: 5,
-  border: 'solid black 1.4px',
+
+  padding: 21,
+ 
   background:'lightblue',
 
 
@@ -60,7 +60,7 @@ let headerLink= css({
 })
 
 const ListLink = props =>
-  <li style={{display:"inline-block",float:"right",listStyle:'none',margin:0, height:60,paddingTop:13,paddingLeft:10 }}>
+  <li style={{display:"inline-block",float:"right",listStyle:'none',margin:0, height:60,paddingTop:13 }}>
     <Link exact activeStyle={{ color:'black',background:'darkgray'}} style={{textShadow:'none', color:'black'}} to={props.to} {...headerLink}>
       {props.children}
     </Link>
@@ -68,7 +68,7 @@ const ListLink = props =>
 
 export default ({ children}) => 
  <div >
-     <Headroom style={{backgroundColor:'lightblue',}} >
+     <Headroom style={{backgroundColor:'lightblue',position: 'fixed', zIndex: 10, right: 0, left: 0, top: 0,height:64}} >
      
           <header style={{  padding: `0.25rem 1rem`, maxWidth: 650, margin:'0 auto'}}>
             
