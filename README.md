@@ -12,7 +12,7 @@ gatsby new portfolio-site https://github.com/justondias/juston-portfolio
 `gatsby develop`
 
 ##Live sample
-https://frosty-hawking-2c3f60.netlify.com/about/
+https://frosty-hawking-2c3f60.netlify.com/
 
 
 Site is still under construction.
