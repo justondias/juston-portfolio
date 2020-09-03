@@ -22,7 +22,7 @@
     "glamorous": "^4.12.1",
     "micro": "latest",
     "react-headroom": "^2.2.2",
-    "serve": "^6.5.4",
+    "serve": "^10.1.2",
     "typography-theme-fairy-gates": "^0.15.11"
   }
 }
