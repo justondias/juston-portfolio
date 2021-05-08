@@ -11,7 +11,7 @@ gatsby new portfolio-site https://github.com/justondias/juston-portfolio
 ## Running in development
 `gatsby develop`
 
-##Live sample
+## Live sample
 https://frosty-hawking-2c3f60.netlify.com/
 
 
