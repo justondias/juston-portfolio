@@ -9,7 +9,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^1.9.241",
+    "gatsby": "^5.3.3",
     "gatsby-image": "^1.0.45",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-glamor": "^1.6.13",
